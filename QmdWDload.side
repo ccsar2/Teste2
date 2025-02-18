@@ -1,0 +1,416 @@
+{
+  "id": "e9f3c828-206a-4ebb-a511-e2c9e2d1c04c",
+  "version": "2.0",
+  "name": "QmdWEB",
+  "url": "https://terrabrasilis.dpi.inpe.br",
+  "tests": [{
+    "id": "69779227-3d7c-45d6-9a04-c93c719cc74b",
+    "name": "Untitled",
+    "commands": [{
+      "id": "6ed82229-5554-4b9a-8379-5e4b023c06b9",
+      "comment": "",
+      "command": "open",
+      "target": "/queimadas/bdqueimadas/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8a6bc8ee-bd1a-4196-8a71-d4d3b42333ba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "828x694",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e0ac8c98-6c3a-4fb4-8bb5-a76e3a523108",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-download",
+      "targets": [
+        ["css=.fa-download", "css:finder"],
+        ["xpath=//li[@id='export-button']/a/i", "xpath:idRelative"],
+        ["xpath=//li[3]/a/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2009acca-0244-4aa2-be1d-f4bc228fe0b3",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=countries",
+      "targets": [
+        ["id=countries", "id"],
+        ["name=countries", "name"],
+        ["css=#countries", "css:finder"],
+        ["xpath=//select[@id='countries']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": "label=Todos os países"
+    }, {
+      "id": "395c8fc3-aa33-41d6-a72c-b3dea09ef851",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=countries",
+      "targets": [
+        ["id=countries", "id"],
+        ["name=countries", "name"],
+        ["css=#countries", "css:finder"],
+        ["xpath=//select[@id='countries']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": "label=Brasil"
+    }, {
+      "id": "5f52ae4b-49ce-40f5-93fc-b21859befe1c",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=states",
+      "targets": [
+        ["id=states", "id"],
+        ["name=states", "name"],
+        ["css=#states", "css:finder"],
+        ["xpath=//select[@id='states']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Todos os estados"
+    }, {
+      "id": "267f02d0-e601-4d96-8eab-b81e19a311c2",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=#states > option:nth-child(1)",
+      "targets": [
+        ["css=#states > option:nth-child(1)", "css:finder"],
+        ["xpath=(//option[@value=''])[3]", "xpath:attributes"],
+        ["xpath=//select[@id='states']/option", "xpath:idRelative"],
+        ["xpath=//div[3]/select/option", "xpath:position"],
+        ["xpath=//option[contains(.,'Todos os estados')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c877763f-ca0e-41a7-8300-820e9944e38a",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=TODOS"
+    }, {
+      "id": "195aa8dc-b3e9-4dc6-a7eb-310302f913ed",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Satélite de referência (Aqua Tarde)"
+    }, {
+      "id": "c87e59cd-7a3e-46bb-8073-a584589635ad",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Terra Manhã"
+    }, {
+      "id": "f050329f-3c0f-4abc-bdab-8cdb5feee311",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Terra Tarde"
+    }, {
+      "id": "9ac4acbe-d317-4b1f-8303-0f813964459e",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Aqua Manhã"
+    }, {
+      "id": "caea4ae4-9f94-4ac7-bab0-cd48122dc988",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=GOES-16"
+    }, {
+      "id": "6f03f13d-a26a-404e-933c-753d4bcfe9cf",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-18 Tarde"
+    }, {
+      "id": "dd55c019-a210-4f63-8e6e-d6ad11223b72",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-18 Manhã"
+    }, {
+      "id": "f3f96b23-f8cd-4caf-86c3-594102350e42",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=MSG-03"
+    }, {
+      "id": "8412b3fc-11fa-40f5-ae11-5be74d6ed5b3",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=METOP-B"
+    }, {
+      "id": "ca4ae509-f36a-490d-8bf2-317269591846",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=METOP-C"
+    }, {
+      "id": "d90cd3f3-fbf7-40ca-b4d5-32ba0ebb9112",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-19 Tarde"
+    }, {
+      "id": "70a6b938-4d79-4c94-992f-b161cf409467",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-19 Manhã"
+    }, {
+      "id": "1a7cfd44-886f-4628-bcdc-fd2d355ba20e",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-20"
+    }, {
+      "id": "34619dd2-d9a4-47c7-977a-b47efff74dd0",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-21"
+    }, {
+      "id": "dc60266b-fbae-416e-9083-453021f5edd7",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NPP-375 Manhã"
+    }, {
+      "id": "a0f216fa-016b-4daf-9268-774e20a642ad",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NPP-375 Tarde"
+    }, {
+      "id": "d03b74f5-38fb-4eaf-ac62-b1d5996fcbb1",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=#filter-satellite > option:nth-child(1)",
+      "targets": [
+        ["css=#filter-satellite > option:nth-child(1)", "css:finder"],
+        ["xpath=//option[@value='all']", "xpath:attributes"],
+        ["xpath=//select[@id='filter-satellite']/option", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select/option", "xpath:position"],
+        ["xpath=//option[contains(.,'TODOS')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01fbf801-4b27-413f-bd5b-5574497bccba",
+      "comment": "",
+      "command": "click",
+      "target": "id=filter-button",
+      "targets": [
+        ["id=filter-button", "id"],
+        ["css=#filter-button", "css:finder"],
+        ["xpath=//button[@id='filter-button']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Aplicar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "61d71da4-a712-47cc-b058-6114121e05a0",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "id=filter-button",
+      "targets": [
+        ["id=filter-button", "id"],
+        ["css=#filter-button", "css:finder"],
+        ["xpath=//button[@id='filter-button']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[5]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'Aplicar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "743067e1-efc9-4933-950a-f20e916d4d2c",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='map-export']/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ddd01fde-544f-4733-b0cb-8cef009f448a",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//div[@id='map-export']/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/div/input", "xpath:position"]
+      ],
+      "value": "ccsarg@gmail.com"
+    }, {
+      "id": "ea23f752-38ad-4aea-9fce-9e06ea86ad05",
+      "comment": "",
+      "command": "click",
+      "target": "id=go-export-button",
+      "targets": [
+        ["id=go-export-button", "id"],
+        ["css=#go-export-button", "css:finder"],
+        ["xpath=//button[@id='go-export-button']", "xpath:attributes"],
+        ["xpath=//div[@id='map-export']/div[4]/button", "xpath:idRelative"],
+        ["xpath=//div[4]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Exportar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7eb12b7e-ddec-4a2b-99e9-0d926ac81480",
+      "comment": "",
+      "command": "click",
+      "target": "css=.vex-dialog-button",
+      "targets": [
+        ["css=.vex-dialog-button", "css:finder"],
+        ["xpath=//input[@value='OK']", "xpath:attributes"],
+        ["xpath=//form/div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d49dac0c-dd6b-41c1-af98-e581b82f7e3c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["69779227-3d7c-45d6-9a04-c93c719cc74b"]
+  }],
+  "urls": ["https://terrabrasilis.dpi.inpe.br/"],
+  "plugins": []
+}

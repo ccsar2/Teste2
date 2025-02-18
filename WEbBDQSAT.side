@@ -1,0 +1,630 @@
+{
+  "id": "fc52b72c-a9fc-4677-9d15-07e57835c9ee",
+  "version": "2.0",
+  "name": "WEbBDQSAT",
+  "url": "https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/",
+  "tests": [{
+    "id": "3562e908-c420-4626-acdd-209686ebfd9d",
+    "name": "WebSat",
+    "commands": [{
+      "id": "174fef6e-ec06-449a-a7a2-198cc2df413b",
+      "comment": "",
+      "command": "open",
+      "target": "https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3528717f-dec5-4fd0-9b0c-a1e0aebf4876",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1288x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b301fc89-c9c3-4c15-93c0-34353c3f51aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-map-marked-alt",
+      "targets": [
+        ["css=.fa-map-marked-alt", "css:finder"],
+        ["xpath=//li[@id='map-box-button']/a/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9be406e8-8ea1-418c-9fe6-317c9d82b3f3",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=countries",
+      "targets": [
+        ["id=countries", "id"],
+        ["name=countries", "name"],
+        ["css=#countries", "css:finder"],
+        ["xpath=//select[@id='countries']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": "label=Todos os países"
+    }, {
+      "id": "478ee5cf-3bb8-453a-a1ac-81fbabf9c028",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=countries",
+      "targets": [
+        ["id=countries", "id"],
+        ["name=countries", "name"],
+        ["css=#countries", "css:finder"],
+        ["xpath=//select[@id='countries']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div/div[2]/select", "xpath:idRelative"],
+        ["xpath=//div[2]/select", "xpath:position"]
+      ],
+      "value": "label=Brasil"
+    }, {
+      "id": "ab4ca654-9086-4e94-ad92-f02e1bca0105",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=states",
+      "targets": [
+        ["id=states", "id"],
+        ["name=states", "name"],
+        ["css=#states", "css:finder"],
+        ["xpath=//select[@id='states']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Todos os estados"
+    }, {
+      "id": "11f3c695-b686-4631-9f49-526d4a600b6a",
+      "comment": "",
+      "command": "addSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=TODOS"
+    }, {
+      "id": "03b3e0fa-d2cd-4469-938d-1f9635ff538c",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Satélite de referência (Aqua Tarde)"
+    }, {
+      "id": "95797244-4247-4ef0-b25a-b8560fa85562",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Terra Manhã"
+    }, {
+      "id": "e1954f43-a5ee-4857-a69e-dec41c13201a",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Terra Tarde"
+    }, {
+      "id": "b517c976-3e95-4116-8502-431d9b43da38",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=Aqua Manhã"
+    }, {
+      "id": "087ab997-1cb9-491b-9e04-76c91cabd9ce",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=GOES-16"
+    }, {
+      "id": "d18215ba-cdae-414d-a367-414383bfe56b",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-18 Tarde"
+    }, {
+      "id": "d17ce5ea-6187-43a4-8a34-e7dfdfa16d69",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-18 Manhã"
+    }, {
+      "id": "72d50f3a-02a1-499d-b829-19fb903a8f00",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=MSG-03"
+    }, {
+      "id": "7e4f462d-2701-4dcb-a614-d3956c726e67",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=METOP-B"
+    }, {
+      "id": "19da915a-c581-4fbf-9ec9-df146f984d69",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=METOP-C"
+    }, {
+      "id": "e4c36d49-03c9-48e8-bf03-d3751597b19f",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-19 Tarde"
+    }, {
+      "id": "5d9f81b7-c453-4bb1-88e0-6b6659490072",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-19 Manhã"
+    }, {
+      "id": "6b95c2a3-956a-42e4-877e-6d6fda7d1f72",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-20"
+    }, {
+      "id": "92ec70a6-7cb4-4962-a21c-889703a2b8eb",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NOAA-21"
+    }, {
+      "id": "0a77909e-30d1-408e-bdef-2f61bf8dd39b",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NPP-375 Manhã"
+    }, {
+      "id": "822ab42c-9461-452a-987e-fcc4c6da2532",
+      "comment": "",
+      "command": "removeSelection",
+      "target": "id=filter-satellite",
+      "targets": [
+        ["id=filter-satellite", "id"],
+        ["css=#filter-satellite", "css:finder"],
+        ["xpath=//select[@id='filter-satellite']", "xpath:attributes"],
+        ["xpath=//div[@id='map-filters']/div[3]/div[3]/select", "xpath:idRelative"],
+        ["xpath=//div[3]/div[3]/select", "xpath:position"]
+      ],
+      "value": "label=NPP-375 Tarde"
+    }, {
+      "id": "65d873b1-b5f4-48bf-9afa-d37c41e9de68",
+      "comment": "",
+      "command": "click",
+      "target": "css=#meteorology > .group-name > .fas",
+      "targets": [
+        ["css=#meteorology > .group-name > .fas", "css:finder"],
+        ["xpath=//li[@id='meteorology']/span/i", "xpath:idRelative"],
+        ["xpath=//div/ul/li[6]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a0e268db-294d-43a0-9ee2-bc3b86d5ca1a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#fire_risk .fas",
+      "targets": [
+        ["css=#fire_risk .fas", "css:finder"],
+        ["xpath=//li[@id='fire_risk']/span/i", "xpath:idRelative"],
+        ["xpath=//li[6]/ul/li/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5867845e-37f6-4325-9ef9-5f87719880e4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#FireRisk .slider",
+      "targets": [
+        ["css=#FireRisk .slider", "css:finder"],
+        ["xpath=//li[@id='FireRisk']/label/span", "xpath:idRelative"],
+        ["xpath=//li[6]/ul/li/ul/li/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3875170f-88d5-4173-8b9d-77b9fb2f816e",
+      "comment": "",
+      "command": "click",
+      "target": "css=#FireRisk .slider",
+      "targets": [
+        ["css=#FireRisk .slider", "css:finder"],
+        ["xpath=//li[@id='FireRisk']/label/span", "xpath:idRelative"],
+        ["xpath=//li[6]/ul/li/ul/li/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8f68720-87c1-44a4-9cf6-d6d6360927aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=#RF\\.PREV\\.T0 .slider",
+      "targets": [
+        ["css=#RF\\.PREV\\.T0 .slider", "css:finder"],
+        ["xpath=//li[@id='RF.PREV.T0']/label/span", "xpath:idRelative"],
+        ["xpath=//li[6]/ul/li/ul/li[2]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5fdb6dcd-e1be-4e6d-b94f-745af58625a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=#RF\\.PREV\\.T0 .slider",
+      "targets": [
+        ["css=#RF\\.PREV\\.T0 .slider", "css:finder"],
+        ["xpath=//li[@id='RF.PREV.T0']/label/span", "xpath:idRelative"],
+        ["xpath=//li[6]/ul/li/ul/li[2]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f676aeb1-a4b0-4c53-a343-f207045dac63",
+      "comment": "",
+      "command": "click",
+      "target": "css=#precipitation .fas",
+      "targets": [
+        ["css=#precipitation .fas", "css:finder"],
+        ["xpath=//li[@id='precipitation']/span/i", "xpath:idRelative"],
+        ["xpath=//li[6]/ul/li[2]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "028f66f0-5943-42be-8b3e-4870f7da16f1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#PREC\\.PREV\\.T0 .slider",
+      "targets": [
+        ["css=#PREC\\.PREV\\.T0 .slider", "css:finder"],
+        ["xpath=//li[@id='PREC.PREV.T0']/label/span", "xpath:idRelative"],
+        ["xpath=//li[6]/ul/li[2]/ul/li[3]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f9dbdbb2-4e44-49df-bd7e-92e38ed9314f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#PREC\\.PREV\\.T0 .slider",
+      "targets": [
+        ["css=#PREC\\.PREV\\.T0 .slider", "css:finder"],
+        ["xpath=//li[@id='PREC.PREV.T0']/label/span", "xpath:idRelative"],
+        ["xpath=//li[6]/ul/li[2]/ul/li[3]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b1a8e7c7-a90c-40c8-b143-a5afad0fbd94",
+      "comment": "",
+      "command": "click",
+      "target": "css=#satellites_images .fas",
+      "targets": [
+        ["css=#satellites_images .fas", "css:finder"],
+        ["xpath=//li[@id='satellites_images']/span/i", "xpath:idRelative"],
+        ["xpath=//div/ul/li[5]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5c743616-1105-4c58-bb8c-979e7345e3c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=#GOES-East_ABI_GeoColor .slider",
+      "targets": [
+        ["css=#GOES-East_ABI_GeoColor .slider", "css:finder"],
+        ["xpath=//li[@id='GOES-East_ABI_GeoColor']/label/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[5]/ul/li/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0564aca3-671c-4ef9-88ab-de35d41b9dd8",
+      "comment": "",
+      "command": "click",
+      "target": "css=#GOES-East_ABI_GeoColor .slider",
+      "targets": [
+        ["css=#GOES-East_ABI_GeoColor .slider", "css:finder"],
+        ["xpath=//li[@id='GOES-East_ABI_GeoColor']/label/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[5]/ul/li/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6896a244-d1cf-46cc-b4f9-ac853c41a435",
+      "comment": "",
+      "command": "click",
+      "target": "css=#VIIRS_NOAA20_CorrectedReflectance_TrueColor .slider",
+      "targets": [
+        ["css=#VIIRS_NOAA20_CorrectedReflectance_TrueColor .slider", "css:finder"],
+        ["xpath=//li[@id='VIIRS_NOAA20_CorrectedReflectance_TrueColor']/label/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[5]/ul/li[2]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "681be3b2-596b-454b-a0db-a63170f6aebd",
+      "comment": "",
+      "command": "click",
+      "target": "css=#VIIRS_NOAA20_CorrectedReflectance_TrueColor .slider",
+      "targets": [
+        ["css=#VIIRS_NOAA20_CorrectedReflectance_TrueColor .slider", "css:finder"],
+        ["xpath=//li[@id='VIIRS_NOAA20_CorrectedReflectance_TrueColor']/label/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[5]/ul/li[2]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "459afdfe-738b-4fa2-abf3-942262272334",
+      "comment": "",
+      "command": "click",
+      "target": "css=#VIIRS_NOAA20_CorrectedReflectance_BandsM11-I2-I1 .slider",
+      "targets": [
+        ["css=#VIIRS_NOAA20_CorrectedReflectance_BandsM11-I2-I1 .slider", "css:finder"],
+        ["xpath=//li[@id='VIIRS_NOAA20_CorrectedReflectance_BandsM11-I2-I1']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[3]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f23a5ae6-e9cd-4c5e-a013-5ca1f8e29ec3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#VIIRS_NOAA20_CorrectedReflectance_BandsM11-I2-I1 .slider",
+      "targets": [
+        ["css=#VIIRS_NOAA20_CorrectedReflectance_BandsM11-I2-I1 .slider", "css:finder"],
+        ["xpath=//li[@id='VIIRS_NOAA20_CorrectedReflectance_BandsM11-I2-I1']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[3]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0dccdbdb-da97-4223-8d98-9d6820130c03",
+      "comment": "",
+      "command": "click",
+      "target": "css=#VIIRS_SNPP_CorrectedReflectance_TrueColor .slider",
+      "targets": [
+        ["css=#VIIRS_SNPP_CorrectedReflectance_TrueColor .slider", "css:finder"],
+        ["xpath=//li[@id='VIIRS_SNPP_CorrectedReflectance_TrueColor']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[4]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4768d223-bf6c-48a5-aab3-f7a424ebd9c2",
+      "comment": "",
+      "command": "click",
+      "target": "css=#VIIRS_SNPP_CorrectedReflectance_TrueColor .slider",
+      "targets": [
+        ["css=#VIIRS_SNPP_CorrectedReflectance_TrueColor .slider", "css:finder"],
+        ["xpath=//li[@id='VIIRS_SNPP_CorrectedReflectance_TrueColor']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[4]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca7ca668-e4fb-4318-9e0c-7944b305c6c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=#VIIRS_SNPP_CorrectedReflectance_BandsM11-I2-I1 .slider",
+      "targets": [
+        ["css=#VIIRS_SNPP_CorrectedReflectance_BandsM11-I2-I1 .slider", "css:finder"],
+        ["xpath=//li[@id='VIIRS_SNPP_CorrectedReflectance_BandsM11-I2-I1']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[5]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1db1534-607e-44ec-b276-96a7afeac47f",
+      "comment": "",
+      "command": "click",
+      "target": "css=#VIIRS_SNPP_CorrectedReflectance_BandsM11-I2-I1 .slider",
+      "targets": [
+        ["css=#VIIRS_SNPP_CorrectedReflectance_BandsM11-I2-I1 .slider", "css:finder"],
+        ["xpath=//li[@id='VIIRS_SNPP_CorrectedReflectance_BandsM11-I2-I1']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[5]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4f072af0-dcea-499a-a24b-e5f606f41098",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MODIS_Aqua_CorrectedReflectance_TrueColor .slider",
+      "targets": [
+        ["css=#MODIS_Aqua_CorrectedReflectance_TrueColor .slider", "css:finder"],
+        ["xpath=//li[@id='MODIS_Aqua_CorrectedReflectance_TrueColor']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[6]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04270f3b-fa9a-49b6-a9d7-12a085b41a3a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MODIS_Aqua_CorrectedReflectance_TrueColor .slider",
+      "targets": [
+        ["css=#MODIS_Aqua_CorrectedReflectance_TrueColor .slider", "css:finder"],
+        ["xpath=//li[@id='MODIS_Aqua_CorrectedReflectance_TrueColor']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[6]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05e199ba-3e02-4d19-b6c8-d8b005100c47",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MODIS_Aqua_CorrectedReflectance_Bands721 .slider",
+      "targets": [
+        ["css=#MODIS_Aqua_CorrectedReflectance_Bands721 .slider", "css:finder"],
+        ["xpath=//li[@id='MODIS_Aqua_CorrectedReflectance_Bands721']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[7]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e56a60f2-30d0-4fda-99fb-03a9130223ec",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MODIS_Aqua_CorrectedReflectance_Bands721 .slider",
+      "targets": [
+        ["css=#MODIS_Aqua_CorrectedReflectance_Bands721 .slider", "css:finder"],
+        ["xpath=//li[@id='MODIS_Aqua_CorrectedReflectance_Bands721']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[7]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "195e98a8-c7ae-4805-92c4-14ecc5c93c0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MODIS_Terra_CorrectedReflectance_TrueColor .slider",
+      "targets": [
+        ["css=#MODIS_Terra_CorrectedReflectance_TrueColor .slider", "css:finder"],
+        ["xpath=//li[@id='MODIS_Terra_CorrectedReflectance_TrueColor']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[8]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e9450eb5-0901-47b6-ad2e-eb224a3e1e03",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MODIS_Terra_CorrectedReflectance_TrueColor .slider",
+      "targets": [
+        ["css=#MODIS_Terra_CorrectedReflectance_TrueColor .slider", "css:finder"],
+        ["xpath=//li[@id='MODIS_Terra_CorrectedReflectance_TrueColor']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[8]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6eb6d9a3-3a98-41f6-bf93-c2b2e6d8d4d7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#MODIS_Terra_CorrectedReflectance_Bands721 .slider",
+      "targets": [
+        ["css=#MODIS_Terra_CorrectedReflectance_Bands721 .slider", "css:finder"],
+        ["xpath=//li[@id='MODIS_Terra_CorrectedReflectance_Bands721']/label/span", "xpath:idRelative"],
+        ["xpath=//li[5]/ul/li[9]/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d92dbc9-03a9-4535-887b-eae2cc2b3ce7",
+      "comment": "",
+      "command": "click",
+      "target": "css=#GOES-East_ABI_GeoColor .slider",
+      "targets": [
+        ["css=#GOES-East_ABI_GeoColor .slider", "css:finder"],
+        ["xpath=//li[@id='GOES-East_ABI_GeoColor']/label/span", "xpath:idRelative"],
+        ["xpath=//div/ul/li[5]/ul/li/label/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4fb86fdd-bc4c-4df7-a8a1-02c97ecdd828",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=#MODIS_Aqua_CorrectedReflectance_TrueColor a",
+      "targets": [
+        ["css=#MODIS_Aqua_CorrectedReflectance_TrueColor a", "css:finder"],
+        ["xpath=(//a[contains(text(),'2025/02/17')])[5]", "xpath:link"],
+        ["xpath=//li[@id='MODIS_Aqua_CorrectedReflectance_TrueColor']/span/span/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[11]", "xpath:href"],
+        ["xpath=//li[6]/span/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ace96469-28cd-46e5-b608-6a1eeeff9d90",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["3562e908-c420-4626-acdd-209686ebfd9d"]
+  }],
+  "urls": ["https://terrabrasilis.dpi.inpe.br/", "https://terrabrasilis.dpi.inpe.br/queimadas/bdqueimadas/"],
+  "plugins": []
+}
